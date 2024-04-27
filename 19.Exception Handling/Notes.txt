@@ -1,0 +1,89 @@
+Exception Handling:
+
+Exception:
+
+1)Error vs Exception
+2)Exception Keywords
+3)catch vs finally
+4)throws vs throw
+5)Runtime Exception vs Compile Time Exception
+[Unchecked Exception]   [Checked Exception]
+
+What is Exception?
+The term exception is shorthand for the phrase "exceptional event"
+
+An exception is an event, which occurs during the execution of a program, that disrupts[stops] the normal flow of the program's instructions.
+
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+        at ExceptionDemo.divide(ExceptionDemo.java:11)
+        at ExceptionDemo.main(ExceptionDemo.java:21){stack}
+
+When an error occurs within a method, the method creates an object and hands it off to the runtime system[JVM]. The object, called an exception object, contains information about the error, including its type and the state of the program when the error occurred. Creating an exception object and handing it to the runtime system is called throwing an exception.
+
+exception always return corresponding object
+
+After a method throws an exception, the runtime system attempts to find something to handle it.
+
+
+Object cannot be present without  class.
+
+
+Advantage 1: Separating Error-Handling Code from "Regular" Code
+
+Advantage 2: Propagating Errors Up the Call Stack
+
+1)Error vs Exception
+
+Exception:
+The class Exception and its subclasses are a form of Throwable that indicates conditions that a reasonable application might want to catch.
+
+Error:
+An Error is a subclass of Throwable that indicates serious problems that a reasonable application should not try to catch.
+
+StackOverflow error:
+StackOverflowError is an error which Java doesn’t allow to catch, for instance, stack running out of space, as it’s one of the most common runtime errors one can encounter.
+
+//Recursion
+
+1)try -finally- catch- NO
+2)try -catch -Yes
+3)try finally -yes
+4)try catch finally-yes
+
+try catch finally throw throws:
+
+small keyword:if
+large keyword:implements
+              synchronized
+              runnable
+
+throws :passing exception handling responsibility to the method caller:
+
+runtime exception:(unchecked exception)
+ArrayIndexOutOfBoundsException,ArithmeticException,NegativeArraySizeException
+
+Runtime Exception:
+RuntimeException is the superclass of those exceptions that can be thrown during the normal operation of the Java Virtual Machine.
+Unchecked exceptions do not need to be declared in a method 
+
+
+CompileTime Exception:(checked exception)
+Checked exceptions need to be declared in a method 
+
+checked exception should be handled during compile time:filenotfoundexception
+unchecked exception should be handled during runtime
+
+java.lang.Object
+java.lang.Throwable
+java.lang.Exception
+java.lang.RuntimeException
+
+RuntimeException and its subclasses are unchecked exceptions. 
+
+1)predefined exception
+2)user defined exception
+
+
+
+
+

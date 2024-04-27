@@ -1,0 +1,112 @@
+Exception Handling:
+
+1)What is Exception?
+Abnormal Behaviour in programs
+
+Abnormal event which stops the program abruptly.
+
+100% Object Oriented Programming?
+
+Primitive DataTypes:int float
+
+JVM-->Object -->Class
+
+Exception-->whenever Exception  occurs,the corresponding exception Object will be thrown.
+
+Exception Object -->Throwable
+
+Stack
+Throwable-->Object 
+
+
+
+java.lang.Object
+java.lang.Throwable
+Direct known subclass: Error and Exception
+Exception--->Throwable
+
+Throwable-->Error           Exception
+
+Throwable class is the superclass of all error and exception in the java language.
+only objects that are instances of this class (or one of its subclass)are thrown by the java Virtual Machine.
+
+
+Exception
+checked exception--->Compile time Exception 
+unchecked exception--Runtime Exception
+
+
+
+
+A throwable contains a snapshot of the execution stack of its thread at the time it was Created.
+
+it can also contain a message string that gives more information about the error.
+
+1)Stack-Line No
+2)Exception Name
+3)Message String
+
+
+
+
+Error:
+An error is a subclass of Throwable that indicates serious problem that a reasonable application should not try to catch.Most such errors are abnormal conditions.
+
+
+Exception:
+The class Exception and its subclass are a form of throwable that indicates conditions that a reasonable application might want to catch.
+
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+        at ExceptionDemo.divide(ExceptionDemo.java:24)
+        at ExceptionDemo.main(ExceptionDemo.java:7)
+
+
+Runtime exeception is the superclass of those exeception that can be thrown during the normal operation of the JVM.
+
+RuntimeException and its superclass are unchecked exception.
+
+RuntimeException--superclass
+
+ArithmeticException:--subclass
+
+
+
+Whenever exception occurs,the corresponding exception object are thrown.
+
+it should be caught.
+
+1)What is Exception?
+2)Base class-Throwable
+3)Exception-
+--Stack-snapshot
+-String Message
+--Stack Trace
+4)try
+5)catch(Exception Onj)
+
+
+
+
+try{
+}
+catch(Exception e)
+{
+}
+finally{
+//code cleaning process
+//DB closure
+}
+
+try-catch block/finally block/catch block and finally block
+
+try block should accompained by catch or fianlly or both.
+
+finaly block will be called always irrespective of Exception occurs or not. 
+
+catch block will be called only when corresponding Exception Object is Thrown.
+
+try catch finally throw throws?
+
+user defined Exception?
+
+ 
